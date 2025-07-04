@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+body, html {
+  background: transparent !important;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(82, 82, 82, 0.322);
+}
+::-webkit-scrollbar-thumb {
+  background: #0169bec4;
+  border-radius: 5px;
+}
+
+.root-wrapper {
+  width: 15vw;
+  position: absolute;
+  top: 35%;
+  left: 83.5%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  overflow: hidden;
+}
+
+.main-wrapper {
+  width: 100%;
+  max-height: 75vh;
+  background: rgba(20, 26, 34, 0.75);
+  padding: 2vh;
+  border-radius: 0.5vh;
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  display: none;
+}
+
+.heading {
+  font-size: 1.8vh;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+  border-bottom: 2px solid #0169bec4;
+  color: #ffffff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vh;
+}
+
+.form label {
+  font-size: 1.4vh;
+  color: #bbbbbb;
+}
+
+.form-control[type="text"],
+.form-control[type="number"],
+.form-control[type="password"],
+.form-select {
+  width: 100%;
+  height: 5vh;
+  padding: 0 1vh;
+  font-size: 1.5vh;
+  background: rgba(35, 41, 55, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.4vh;
+  color: #ffffff;
+  box-shadow: inset 0 0 4px #000, 0 0 6px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #0169bec4;
+  box-shadow: 0 0 0 1px #0169bec4, 0 0 6px #0169bec4;
+}
+
+.form-select option {
+  background: #0e1011;
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #bbbbbb;
+  opacity: 0.7;
+}
+
+.btn {
+  width: 100%;
+  height: 5vh;
+  background: #02376394;
+  border: none;
+  border-radius: 0.5vh;
+  color: #0169bec4;
+  font-size: 1.6vh;
+  font-weight: 500;
+  margin-top: 5%;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px #0169bec4;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #0169bee3;
+  color: #ffffff;
+}
+
+.label {
+  width: 100%;
+  padding: 1vh;
+  font-size: 1.4vh;
+  text-align: center;
+  background: rgba(35, 41, 55, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.4vh;
+  color: #ffffff;
+}
